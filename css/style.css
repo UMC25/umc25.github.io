@@ -68,24 +68,28 @@ h3{font-size: var(--fs-h3);}
 .logo{
     width:300px;
     height:102.44px;
-    padding: 1em;
 }
 .child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 10px 10px;
     border-width: 2px;
     border-style: solid;
     border-color: black;
-    width: 95%;
+    width: 80%;
     background-color: var(--clr-light);
     margin: 0 auto;
 
 }
 
-
+.mainn{
+    list-style: none;
+}
 #icons ul{
     list-style: none;
     margin-top: 0.1em;
-    padding: 0;
+    padding: 1em;
     display: inline-flex
 }
 #icons li{
