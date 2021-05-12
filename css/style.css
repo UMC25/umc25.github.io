@@ -1,0 +1,137 @@
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+}
+
+/* custom properties*/
+:root{
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    
+    --fw-reg: 300;
+    --fw-bold:900;
+
+    --clr-light: #fff;
+    --clr-dark: #000;
+    --clr-accent: #288dd0;
+    /*--clr-accent: #49fcd4;*/
+    --clr-accent2:#008BE2; 
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+
+
+}
+@media(min-width: 900px){
+    :root{
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;}}
+/*General style*/
+body{
+    background-image: url("pic1.png");
+    color: var(--clr-dark);
+    text-shadow: 2px 2px var(--clr-accent);
+    margin:0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* typo*/
+strong{ font-weight: var(--fw-bold);}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
+}
+h1{font-size: var(--fs-h1);}
+h2{font-size: var(--fs-h2);}
+h3{font-size: var(--fs-h3);}
+
+
+.main{
+    padding: 3em 1em;
+}
+.logo{
+    width:300px;
+    height:102.44px;
+    padding: 1em;
+}
+.child{
+    box-shadow: 10px 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    width: 95%;
+    background-color: var(--clr-light);
+    margin: 0 auto;
+
+}
+
+
+#icons ul{
+    list-style: none;
+    margin-top: 0.1em;
+    padding: 0;
+    display: inline-flex
+}
+#icons li{
+    margin-left: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+.button {
+    padding: 15px 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 3px rgb(68, 68, 68);
+  }
+  
+.button:active {
+    box-shadow: 0 5px rgb(24, 24, 24);
+    transform: translateY(4px);}
+
+
+@media(min-width: 200px){
+    .logo{
+        width:200px;
+        height:68.29px;
+        padding: 1em;}
+
+    #icons li{
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;}
+    
+        .button {
+            padding: 5px 5px;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 3px rgb(68, 68, 68);
+          }
+          
+    .button:active {
+            box-shadow: 0 5px rgb(24, 24, 24);
+            transform: translateY(4px);}
+
+}
+
+
